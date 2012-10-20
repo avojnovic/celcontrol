@@ -1,0 +1,14 @@
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\bin\Debug\CelControl.exe
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\bin\Debug\CelControl.pdb
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\obj\x86\Debug\CelControl.Properties.Resources.resources
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\obj\x86\Debug\CelControl.exe
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\obj\x86\Debug\CelControl.pdb
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\bin\Debug\CelControl.exe.config
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\obj\x86\Debug\CelControl.MainForm.resources
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+c:\users\usuario\documents\visual studio 2010\Projects\CelControl\CelControl\bin\Debug\BD\CelControl.accdb
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\CelControl\CelControl\bin\Debug\EntityFramework.dll
