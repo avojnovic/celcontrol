@@ -17,7 +17,7 @@ namespace CelControl
        //OleDbConnection myConnection = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.GetDirectoryName(Application.ExecutablePath) + "\\BD\\CelControl.accdb;Persist Security Info=False;");
        
        
-       public static void insert(OleDbConnection myConnection, StringBuilder sb)
+       public static void executes(OleDbConnection myConnection, StringBuilder sb)
        {
 
          
@@ -31,7 +31,7 @@ namespace CelControl
            myConnection.Close();
        }
 
-       public static void insert(OleDbConnection myConnection,string sb)
+       public static void executes(OleDbConnection myConnection, string sb)
        {
                
            myConnection.Open();

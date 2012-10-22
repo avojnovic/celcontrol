@@ -25,3 +25,18 @@ C:\Users\Usuario\Documents\Visual Studio 2010\Projects\CelControlApp\CelControl\
 C:\Users\Usuario\Documents\Visual Studio 2010\Projects\CelControlApp\CelControl\bin\Debug\BD\CelControl.accdb
 C:\Users\Usuario\Documents\Visual Studio 2010\Projects\CelControlApp\CelControl\bin\Debug\CelControl.exe
 C:\Users\Usuario\Documents\Visual Studio 2010\Projects\CelControlApp\CelControl\bin\Debug\CelControl.pdb
+C:\Projects\CelControl\CelControl\bin\Debug\CelControl.exe.config
+C:\Projects\CelControl\CelControl\obj\x86\Debug\CelControl.exe
+C:\Projects\CelControl\CelControl\obj\x86\Debug\CelControl.pdb
+C:\Projects\CelControl\CelControl\bin\Debug\BD\CelControl.accdb
+C:\Projects\CelControl\CelControl\bin\Debug\CelControl.exe
+C:\Projects\CelControl\CelControl\bin\Debug\CelControl.pdb
+C:\Projects\CelControl\CelControl\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Projects\CelControl\CelControl\obj\x86\Debug\Interop.Office.dll
+C:\Projects\CelControl\CelControl\obj\x86\Debug\CelControl.csproj.ResolveComReference.cache
+C:\Projects\CelControl\CelControl\obj\x86\Debug\CelControl.MainForm.resources
+C:\Projects\CelControl\CelControl\obj\x86\Debug\CelControl.Properties.Resources.resources
+C:\Projects\CelControl\CelControl\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Projects\CelControl\CelControl\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Projects\CelControl\CelControl\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Projects\CelControl\CelControl\obj\x86\Debug\GenerateResource.write.1.tlog
