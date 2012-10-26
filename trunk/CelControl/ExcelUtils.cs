@@ -42,17 +42,15 @@ namespace CelControl
                 // Add the sheet name to the string array.
                 foreach (DataRow row in dt.Rows)
                 {
-
-
                     excelSheets[i] = row["TABLE_NAME"].ToString().Replace("$", "");
                     i++;
                 }
 
                 // Loop through all of the sheets if you want too...
-                for (int j = 0; j < excelSheets.Length; j++)
-                {
+                //for (int j = 0; j < excelSheets.Length; j++)
+                //{
                     // Query each excel sheet.
-                }
+                //}
 
                 return excelSheets;
             }
@@ -147,16 +145,10 @@ namespace CelControl
             //    MessageBox.Show(ex.Message);
             //}
 
-
-
-
-
-
-
-
-
-
         }
+
+
+
     }
 
 
