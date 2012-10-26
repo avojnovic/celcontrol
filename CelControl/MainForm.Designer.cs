@@ -42,21 +42,21 @@
             this.BtnRefresh = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.cmbSheets1 = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.BtnSelectFileImport2 = new System.Windows.Forms.Button();
+            this.BtnImportar2 = new System.Windows.Forms.Button();
+            this.txtFileImport2 = new System.Windows.Forms.TextBox();
+            this.cmbSheets2 = new System.Windows.Forms.ComboBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.BtnGenerarReporte = new System.Windows.Forms.Button();
             this.liquidacionesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.celControlDataSet = new CelControl.CelControlDataSet();
             this.celControlDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.liquidacionesTableAdapter = new CelControl.CelControlDataSetTableAdapters.liquidacionesTableAdapter();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.BtnSelectFileImport2 = new System.Windows.Forms.Button();
-            this.txtFileImport2 = new System.Windows.Forms.TextBox();
-            this.BtnImportar2 = new System.Windows.Forms.Button();
-            this.cmbSheets2 = new System.Windows.Forms.ComboBox();
-            this.cmbSheets1 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.LayoutPanelImportar.SuspendLayout();
@@ -222,6 +222,14 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // cmbSheets1
+            // 
+            this.cmbSheets1.FormattingEnabled = true;
+            this.cmbSheets1.Location = new System.Drawing.Point(457, 3);
+            this.cmbSheets1.Name = "cmbSheets1";
+            this.cmbSheets1.Size = new System.Drawing.Size(69, 21);
+            this.cmbSheets1.TabIndex = 11;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel1);
@@ -240,32 +248,92 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.83296F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 85F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.BtnSelectFileImport2, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.BtnImportar2, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtFileImport2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.cmbSheets2, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.progressBar1, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BtnGenerarReporte, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.BtnGenerarReporte, 1, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.70861F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.29139F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 322F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 220F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 122F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(642, 494);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Seleccionar archivo:";
+            // 
+            // BtnSelectFileImport2
+            // 
+            this.BtnSelectFileImport2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnSelectFileImport2.Location = new System.Drawing.Point(450, 23);
+            this.BtnSelectFileImport2.Name = "BtnSelectFileImport2";
+            this.BtnSelectFileImport2.Size = new System.Drawing.Size(25, 20);
+            this.BtnSelectFileImport2.TabIndex = 5;
+            this.BtnSelectFileImport2.Text = "...";
+            this.BtnSelectFileImport2.UseVisualStyleBackColor = true;
+            this.BtnSelectFileImport2.Click += new System.EventHandler(this.BtnSelectFileImport2_Click);
+            // 
+            // BtnImportar2
+            // 
+            this.BtnImportar2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnImportar2.Location = new System.Drawing.Point(571, 21);
+            this.BtnImportar2.Name = "BtnImportar2";
+            this.BtnImportar2.Size = new System.Drawing.Size(66, 23);
+            this.BtnImportar2.TabIndex = 8;
+            this.BtnImportar2.Text = "Importar";
+            this.BtnImportar2.UseVisualStyleBackColor = true;
+            this.BtnImportar2.Click += new System.EventHandler(this.BtnImportar2_Click);
+            // 
+            // txtFileImport2
+            // 
+            this.txtFileImport2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFileImport2.Location = new System.Drawing.Point(115, 23);
+            this.txtFileImport2.Name = "txtFileImport2";
+            this.txtFileImport2.ReadOnly = true;
+            this.txtFileImport2.Size = new System.Drawing.Size(329, 20);
+            this.txtFileImport2.TabIndex = 7;
+            // 
+            // cmbSheets2
+            // 
+            this.cmbSheets2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbSheets2.FormattingEnabled = true;
+            this.cmbSheets2.Location = new System.Drawing.Point(486, 22);
+            this.cmbSheets2.Name = "cmbSheets2";
+            this.cmbSheets2.Size = new System.Drawing.Size(79, 21);
+            this.cmbSheets2.TabIndex = 9;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar1.Location = new System.Drawing.Point(115, 249);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(329, 23);
+            this.progressBar1.TabIndex = 1;
+            this.progressBar1.Visible = false;
+            // 
             // BtnGenerarReporte
             // 
-            this.BtnGenerarReporte.Location = new System.Drawing.Point(488, 154);
+            this.BtnGenerarReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnGenerarReporte.Location = new System.Drawing.Point(115, 421);
             this.BtnGenerarReporte.Name = "BtnGenerarReporte";
-            this.BtnGenerarReporte.Size = new System.Drawing.Size(75, 23);
+            this.BtnGenerarReporte.Size = new System.Drawing.Size(329, 23);
             this.BtnGenerarReporte.TabIndex = 0;
-            this.BtnGenerarReporte.Text = "Generar";
+            this.BtnGenerarReporte.Text = "Generar Etiquetas";
             this.BtnGenerarReporte.UseVisualStyleBackColor = true;
             this.BtnGenerarReporte.Click += new System.EventHandler(this.BtnGenerarReporte_Click);
             // 
@@ -288,78 +356,12 @@
             // 
             this.liquidacionesTableAdapter.ClearBeforeFill = true;
             // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(116, 154);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(300, 23);
-            this.progressBar1.TabIndex = 1;
-            this.progressBar1.Visible = false;
-            // 
             // backgroundWorker1
             // 
             this.backgroundWorker1.WorkerReportsProgress = true;
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Seleccionar archivo:";
-            // 
-            // BtnSelectFileImport2
-            // 
-            this.BtnSelectFileImport2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BtnSelectFileImport2.Location = new System.Drawing.Point(452, 23);
-            this.BtnSelectFileImport2.Name = "BtnSelectFileImport2";
-            this.BtnSelectFileImport2.Size = new System.Drawing.Size(25, 20);
-            this.BtnSelectFileImport2.TabIndex = 5;
-            this.BtnSelectFileImport2.Text = "...";
-            this.BtnSelectFileImport2.UseVisualStyleBackColor = true;
-            this.BtnSelectFileImport2.Click += new System.EventHandler(this.BtnSelectFileImport2_Click);
-            // 
-            // txtFileImport2
-            // 
-            this.txtFileImport2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFileImport2.Location = new System.Drawing.Point(116, 23);
-            this.txtFileImport2.Name = "txtFileImport2";
-            this.txtFileImport2.ReadOnly = true;
-            this.txtFileImport2.Size = new System.Drawing.Size(330, 20);
-            this.txtFileImport2.TabIndex = 7;
-            // 
-            // BtnImportar2
-            // 
-            this.BtnImportar2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BtnImportar2.Location = new System.Drawing.Point(573, 21);
-            this.BtnImportar2.Name = "BtnImportar2";
-            this.BtnImportar2.Size = new System.Drawing.Size(66, 23);
-            this.BtnImportar2.TabIndex = 8;
-            this.BtnImportar2.Text = "Importar";
-            this.BtnImportar2.UseVisualStyleBackColor = true;
-            this.BtnImportar2.Click += new System.EventHandler(this.BtnImportar2_Click);
-            // 
-            // cmbSheets2
-            // 
-            this.cmbSheets2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbSheets2.FormattingEnabled = true;
-            this.cmbSheets2.Location = new System.Drawing.Point(488, 22);
-            this.cmbSheets2.Name = "cmbSheets2";
-            this.cmbSheets2.Size = new System.Drawing.Size(79, 21);
-            this.cmbSheets2.TabIndex = 9;
-            // 
-            // cmbSheets1
-            // 
-            this.cmbSheets1.FormattingEnabled = true;
-            this.cmbSheets1.Location = new System.Drawing.Point(457, 3);
-            this.cmbSheets1.Name = "cmbSheets1";
-            this.cmbSheets1.Size = new System.Drawing.Size(69, 21);
-            this.cmbSheets1.TabIndex = 11;
             // 
             // MainForm
             // 

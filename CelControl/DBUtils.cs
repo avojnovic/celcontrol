@@ -10,58 +10,31 @@ using System.Data.SqlClient;
 
 namespace CelControl
 {
-   public static class DBUtils
+    public static class DBUtils
     {
 
-       
-       //OleDbConnection myConnection = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.GetDirectoryName(Application.ExecutablePath) + "\\BD\\CelControl.accdb;Persist Security Info=False;");
-       
-       
-       public static void executes(OleDbConnection myConnection, StringBuilder sb)
-       {
+        public static void executes(OleDbConnection myConnection, StringBuilder sb)
+        {
+            myConnection.Open();
+            OleDbCommand command = new OleDbCommand(sb.ToString(), myConnection);
+            command.ExecuteNonQuery();
+            myConnection.Close();
+        }
 
-         
-           myConnection.Open();
+        public static void executes(OleDbConnection myConnection, string sb)
+        {
+            myConnection.Open();
+            OleDbCommand command = new OleDbCommand(sb, myConnection);
+            command.ExecuteNonQuery();
+            myConnection.Close();
+        }
 
-
-           OleDbCommand command = new OleDbCommand(sb.ToString(), myConnection);
-           command.ExecuteNonQuery();
-
-
-           myConnection.Close();
-       }
-
-       public static void executes(OleDbConnection myConnection, string sb)
-       {
-               
-           myConnection.Open();
-
-
-           OleDbCommand command = new OleDbCommand(sb, myConnection);
-           command.ExecuteNonQuery();
-
-
-
-
-           myConnection.Close();
-       }
-
-       public static OleDbDataAdapter getData(OleDbConnection myConnection,string selectCommand)
-       {
-                   
-                OleDbDataAdapter dataAdapter = new OleDbDataAdapter(selectCommand, myConnection);
-         
-
-               OleDbCommandBuilder commandBuilder = new OleDbCommandBuilder(dataAdapter);
-  
-             
-
-               return dataAdapter;
-
-           
-       }
-
-
+        public static OleDbDataAdapter getData(OleDbConnection myConnection, string selectCommand)
+        {
+            OleDbDataAdapter dataAdapter = new OleDbDataAdapter(selectCommand, myConnection);
+            OleDbCommandBuilder commandBuilder = new OleDbCommandBuilder(dataAdapter);
+            return dataAdapter;
+        }
 
     }
 }
